@@ -15,24 +15,24 @@ public class SeamCarving
 {	
 	public static void main(String[] args)
   	{
-  		try
-  		{
-	  		String dir = System.getProperty("user.dir");
-	  		String img = "the_kiss.jpg";
-	  		File ori  = new File(dir+"/"+img);
-	  		
-	  		
+		try
+		{
+			String dir = System.getProperty("user.dir");
+			String img = "the_kiss.jpg";
+			File ori  = new File(dir+"/"+img);
+
+
 			Image my_img = new Image(dir, img);
 			Image test2  = new Image(dir, img);
 			test2.show();
 			my_img = Carver.paint_blue_line(my_img);
 			my_img.show();
 			my_img.to_file("jpg", dir+"/test_img.jpg");
-    	}
-    	catch ( Exception e)
+		}
+		catch ( Exception e)
 		{
 			e.printStackTrace();
-    	}
-  	}
+		}
+	}
 
 }
