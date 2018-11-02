@@ -25,7 +25,7 @@ public class SeamCarving
 			Image my_img = new Image(dir, img);
 			Image test2  = new Image(dir, img);
 			test2.show();
-			my_img = Carver.paint_blue_line(my_img);
+			/*my_img =*/ Carver.rgb_to_gs(my_img);
 			my_img.show();
 			my_img.to_file("jpg", dir+"/test_img.jpg");
 		}

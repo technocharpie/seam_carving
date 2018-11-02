@@ -44,15 +44,15 @@ public class Image
 			//File copy = new File(dir+"/temp_file.jpg")
 			//copy.createNewFile();
 
-	      		this.image = ImageIO.read(new File(dir+"/"+img));
-	      		this.icon  = new ImageIcon(image);
-	      		this.label = new JLabel();
-	      		this.frame = new JFrame();
+      		this.image = ImageIO.read(new File(dir+"/"+img));
+      		this.icon  = new ImageIcon(image);
+      		this.label = new JLabel();
+      		this.frame = new JFrame();
 
-	      		this.frame.setLayout(new FlowLayout());
-				this.frame.setSize(image.getWidth() + 20, image.getHeight() + 40);
-	      		this.label.setIcon(icon);
-	      		this.frame.add(label);
+      		this.frame.setLayout(new FlowLayout());
+			this.frame.setSize(image.getWidth() + 20, image.getHeight() + 40);
+      		this.label.setIcon(icon);
+      		this.frame.add(label);
 			this.frame.setVisible(false);
 			this.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
